@@ -1,0 +1,357 @@
+import { conjugateVerb } from "../src/archive/v1/hebrewUtils";
+import { VerbProperties } from "../src/constants/hebrewLetters";
+
+describe("Hebrew Verb Conjugation - PAAL Regular Verbs", () => {
+  // Past Tense
+  it("should conjugate PAAL verb in past tense, masculine, first person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "first",
+      number: "singular",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלתי");
+  });
+
+  it("should conjugate PAAL verb in past tense, feminine, first person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "first",
+      number: "singular",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלתי");
+  });
+
+  it("should conjugate PAAL verb in past tense, masculine, second person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "second",
+      number: "singular",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלת");
+  });
+
+  it("should conjugate PAAL verb in past tense, feminine, second person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "second",
+      number: "singular",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלת");
+  });
+
+  it("should conjugate PAAL verb in past tense, masculine, third person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "third",
+      number: "singular",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכל");
+  });
+
+  it("should conjugate PAAL verb in past tense, feminine, third person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "third",
+      number: "singular",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלה");
+  });
+
+  it("should conjugate PAAL verb in past tense, masculine, first person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "first",
+      number: "plural",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלנו");
+  });
+
+  it("should conjugate PAAL verb in past tense, feminine, first person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "first",
+      number: "plural",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלנו");
+  });
+
+  it("should conjugate PAAL verb in past tense, masculine, second person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "second",
+      number: "plural",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלתם");
+  });
+
+  it("should conjugate PAAL verb in past tense, feminine, second person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "second",
+      number: "plural",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלתן");
+  });
+
+  it("should conjugate PAAL verb in past tense, masculine, third person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "third",
+      number: "plural",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלו");
+  });
+
+  it("should conjugate PAAL verb in past tense, feminine, third person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "past",
+      person: "third",
+      number: "plural",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אכלו");
+  });
+
+  // Present Tense
+  it("should conjugate PAAL verb in present tense, masculine, singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "present",
+      person: "third",
+      number: "singular",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אוכל");
+  });
+
+  it("should conjugate PAAL verb in present tense, feminine, singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "present",
+      person: "third",
+      number: "singular",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אוכלת");
+  });
+
+  it("should conjugate PAAL verb in present tense, masculine, plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "present",
+      person: "third",
+      number: "plural",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אוכלים");
+  });
+
+  it("should conjugate PAAL verb in present tense, feminine, plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "present",
+      person: "third",
+      number: "plural",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אוכלות");
+  });
+
+  // Future Tense
+  it("should conjugate PAAL verb in future tense, masculine, first person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "first",
+      number: "singular",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("אוכל");
+  });
+
+  it("should conjugate PAAL verb in future tense, masculine, second person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "second",
+      number: "singular",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("תאכל");
+  });
+
+  it("should conjugate PAAL verb in future tense, feminine, second person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "second",
+      number: "singular",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("תאכלי");
+  });
+
+  it("should conjugate PAAL verb in future tense, masculine, third person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "third",
+      number: "singular",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("יאכל");
+  });
+
+  it("should conjugate PAAL verb in future tense, feminine, third person singular", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "third",
+      number: "singular",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("תאכל");
+  });
+
+  it("should conjugate PAAL verb in future tense, masculine, first person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "first",
+      number: "plural",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("נאכל");
+  });
+
+  it("should conjugate PAAL verb in future tense, masculine, second person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "second",
+      number: "plural",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("תאכלו");
+  });
+
+  it("should conjugate PAAL verb in future tense, feminine, second person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "second",
+      number: "plural",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("תאכלנה");
+  });
+
+  it("should conjugate PAAL verb in future tense, masculine, third person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "third",
+      number: "plural",
+      gender: "masculine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("יאכלו");
+  });
+
+  it("should conjugate PAAL verb in future tense, feminine, third person plural", () => {
+    const result = conjugateVerb({
+      shoresh: ["א", "כ", "ל"],
+      binyan: "paal",
+      tense: "future",
+      person: "third",
+      number: "plural",
+      gender: "feminine",
+    });
+    console.log("Conjugation Result:", result);
+    expect(result).toBe("תאכלנה");
+  });
+
+  // Infinitive
+  // it("should conjugate PAAL verb in infinitive construct", () => {
+  //   const result = conjugateVerb({
+  //     shoresh: ["א", "כ", "ל"],
+  //     binyan: "paal",
+  //     tense: "infinitive",
+  //     form: "construct",
+  //   });
+  //   console.log("Conjugation Result:", result);
+  //   expect(result).toBe("לאכול");
+  // });
+});

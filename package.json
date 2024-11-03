@@ -1,11 +1,41 @@
 {
-  "name": "app-he-algo",
-  "version": "0.0.1",
-  "description": "An algorithm to generate hebrew verbs conjunctinos",
-  "main": "index.js",
+  "name": "hebrew-verb-generator",
+  "version": "1.0.0",
+  "description": "Hebrew verb conjugation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rimraf dist"
   },
+  "keywords": [
+    "hebrew",
+    "verb",
+    "conjugation",
+    "generator",
+    "binyan"
+  ],
   "author": "F3riko",
-  "license": "ISC"
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F3riko/app-he-algo"
+  }
 }
